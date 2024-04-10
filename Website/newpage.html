@@ -7,6 +7,17 @@
     <link rel="icon" href="https://t4.ftcdn.net/jpg/06/64/26/65/360_F_664266594_EaYs3p6zl4i9cP76HqTG2xDh60yuONwo.jpg" type="image/x-icon">
     <title>Movies</title>
     <style>
+        #video-bg {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+            background-size: cover;
+        }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -64,10 +75,15 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
+            background-color:  black;
+
         }
 
         .card:hover {
             transform: translateY(-10px);
+        }
+        .card h1{
+          color: white;
         }
 
         .card img {
@@ -85,32 +101,19 @@
     <header>
         <h1>Thank You for signing in to my website</h1>
     </header>
-
+    <video id="video-bg" autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+    </video>
 
 
     <section>
 
         <div class="card-container">
             <div class="card">
-                <img src="https://img.freepik.com/free-photo/new-year-banner-with-fireworks_23-2149539970.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703548800&semt=ais" alt="Card 1">
-                <div class="card-content">
-                 
-                </div>
+                <h1>Tap on the image to redirect to the main website</h1>
+      <a href="index.html"> <img src="image.jpg" alt="movie"></a>     
             </div>
-
-            <div class="card">
-                <img src="https://hips.hearstapps.com/hmg-prod/images/new-year-quote2-1639510424.jpg" alt="Card 2">
-                <div class="card-content">
-                    
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="https://i.pinimg.com/originals/c3/a5/f0/c3a5f0e8f6f7515d965b0f9b97841ed5.jpg" alt="Card 3">
-                <div class="card-content">
-        
-                </div>
-            </div>
+     
         </div>
     </section>
 </body>
