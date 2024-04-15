@@ -1,185 +1,90 @@
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+*{
+    
     border: border-box;
+    margin: 0;
+    padding: 0;
 }
+/* Step1 : Add the BackGround Color */
+body {
+    background-color: #1f2833;
+}
+/* step-2 : Designing Nav-bar and side-bar */
 .nav-bar{
-    background-color: black;
-    height: 60px;
-    justify-content: space-evenly;
-    display: flex;
+    width: 100%;
+    height: 55px;
+    background-color: #1a1a1b;
     align-items: center;
-}
-.nav-logo{
-    display: flex;
     color: white;
-    height: 25px;
+    font-family: "Lato", sans-serif;
+}
+
+.nav-bar-container{
+    display: flex;
     align-items: center;
+    height: 100%;
+    padding: 0 50px; 
 }
-.nav-logo p {
-    margin-left: 2.5px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.menu-list{
+    display: flex;
+    list-style: none;
+    margin-left: 50px;
 }
-border{
-    border: 0.7px solid transparent;
+.menu-list-items{
+    margin-right: 34px;
+}
+.logo-container{
+    flex: 1;
     
 }
-.border:hover{
-    border: 0.7px solid white; 
-    border-radius: 5px;
+.sigin-container{
+    flex: 2;
 }
-.nav-search{
-    display: flex;
-    align-items: center;
-    height: 40px; 
-    width: 550px;  
+.signin-container a {
+    text-decoration: none;
+    justify-content: flex-end;
+    color: whitesmoke;
 }
-.nav-search .options{
-    margin: none;
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    height: 27.2px;
-    background-color: #f3f3f3;
-    text-align: center;
+.logo-container p {
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 25px;
+    color: #66fcf1;
+}
+.logo{
+    width: 32px;
+    height: 32px;
+    object-fit:cover;
+    border-radius: 30px;
+    margin-right: 5px;
+}
+.menu-container{
+    flex: 6;
  
-
 }
-.nav-search .search-bar {
-    margin: none;
-    height: 24px;
-    text-align: center;
-    width: 450px;
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
 }
-.search-icon{
-    width: 30px;
+.icon{
     color: white;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: rgb(16, 132, 199);
-    margin: none;
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px;
-    height: 27.2px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
-.watch-list{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.watch-list p {
+.side-bar{
+    padding-top: 50px;
     color: white;
-    
-
-}
-.watch-list a {
-    text-decoration: none;
+    height: 100%;
+    width: 50px;
+    background-color: #1a1a1b;
+    position: fixed;
     display: flex;
-    margin: 3px;
-    text-align: center;
-}
-.time-icon{
-    height: 24px;
-    color: white;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    display: flex;
-
+   
 }
-/* ************************* */
-.nav-liked{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.nav-liked a {
-    text-decoration: none   
-}
-.nav-liked p {
-    color: white;
-    margin: 3px;
-}
-.liked-icon {
-    height: 24px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-/* ************************* */
-.nav-downloads{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.nav-downloads a {
-    text-decoration: none;
-}
-.nav-downloads p {
-    color: white;
-    margin: 3px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    position: relative;
-    margin-top: 6px ;
-}
-.downloads-icon{
-    height: 24px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-/* ************************* */
-.nav-user{
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.nav-user a {
-    text-decoration: none;
-}
-.user-icon{
-    height: 24px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-.nav-user p {
-    color: white;
-    margin: 3px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    position: relative;
-    margin-top: 6px ;
-}
-.nav-menu {
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.menu-icon{
-    height: 24px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-/* ******************************* */
-.main-section{
-    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)) ,url(GunturKaaram.png);
-    height: 700px;
-    background-size: cover;
+.side-icons{
+    margin-bottom: 50px;
 }
 
