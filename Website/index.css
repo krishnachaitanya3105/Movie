@@ -120,6 +120,7 @@ body {
 
 .featured-title {
   width: 200px;
+
 }
 
 .featured-desc {
@@ -178,7 +179,9 @@ body {
   height: 200px;
   object-fit: cover;
   border-radius: 20px;
+  border: 2px solid #aa66fc; /* Light purplish color */
 }
+
 
 .movie-list-item-title {
   background-color: #3d2545; /* Darker shade of purplish color */
