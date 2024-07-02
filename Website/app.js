@@ -4,11 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   arrows.forEach((arrow, i) => {
     const itemNumber = movieLists[i].querySelectorAll("img").length;
-    let clickCounter = 0;
+    let clickCounter = 1;
 
     arrow.addEventListener("click", () => {
       const ratio = Math.floor(window.innerWidth / 270);
-      clickCounter++;
+      clickCounter--;
       
       const maxClicks = itemNumber - (4 + clickCounter) + (4 - ratio);
       const currentTransform = parseFloat(getComputedStyle(movieLists[i]).transform.split(',')[4]) || 0;
